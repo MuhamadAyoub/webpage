@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #0e0e0e;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  color:darkred;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+nav {
+  margin-top: 2rem;
+}
+
+nav a {
+  color: #66ccff;
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* Make sure canvas sits behind content */
+canvas#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
